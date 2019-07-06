@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aboutus">
+
+    <TextView
+        android:id="@+id/txt_us"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="گروه برنامه نویسی تالی"
+        android:textSize="35dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="@font/rooh"/>
+
+    <ImageView
+        android:id="@+id/image_us"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/txt_us"
+        android:src="@drawable/about_us"
+
+        android:layout_height="300dp" />
+
+    <TextView
+        android:id="@+id/about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="@string/description"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/image_us"/>
+
+    <TextView
+        android:id="@+id/about_us_gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_us"
+        android:text="@string/gmail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center_horizontal"
+        android:textColor="@color/light_blue_600"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/about_us_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click"
+        android:layout_below="@id/about_us_gmail"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+
+
+
+</RelativeLayout>

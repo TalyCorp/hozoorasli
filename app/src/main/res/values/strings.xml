@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">hozoor</string>
+    <string name="txt_welcome">خوش آمدید</string>
+    <string name="txt_information">لطفا  اطلاعات   خواسته   شده  را  وارد  کنید</string>
+    <string name="hint_name">لطفا نام خود را وارد کنید</string>
+    <string name="hint_namekhanevadegi">لطفا نام خانوادگی خود را وارد کنید</string>
+    <string name="hint_class">لطفا نام کلاس خود را وارد کنید</string>
+    <string name="btn_next">اوکی تکمیل شد</string>
+    <string name="title_activity_home">خانه</string>
+    <string name="navigation_drawer_open">باز کردن پنجره ی ناوبری</string>
+    <string name="navigation_drawer_close">بستن پنجره ی ناوبری</string>
+    <string name="nav_header_title">اندروید استودیو</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">سربرگ ناوبری</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="menu_home">خانه</string>
+    <string name="menue_class">کلاس ها</string>
+    <string name="menu_slideshow">نمایش</string>
+    <string name="menu_tools">تنظیمات</string>
+    <string name="menu_share">اشتراک گذاری</string>
+    <string name="menu_aboutus">درباره ی ما</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_classes">classes</string>
+    <string name="title_activity_in_classes">in_classes</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_class">Class</string>
+    <string name="title_activity_about_us">about_us</string>
+    <string name="title_activity_hoome">hoome</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_my_home">my_home</string>
+
+    <string name="description">گروه برنامه نویسی تالی با چند سال سابقه در حوزه برنامه نویسی اندروید و طراحی وب سایت آماده خدمت رسانی به شما میباشد.</string>
+    <string name="title">گروه برنامه نویسی تالی</string>
+    <string name="gmail">talycorp@gmail.com</string>
+    <string name="click">(بر روی ایمیل کلیک کنید)</string>
+</resources>

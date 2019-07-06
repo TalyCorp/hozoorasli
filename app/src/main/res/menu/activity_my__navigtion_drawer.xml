@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_hozor_ghiyab"
+            android:title="صفحه اصلی" />
+        <item
+            android:id="@+id/nav_kelas"
+            android:icon="@drawable/ic_school_150dp"
+            android:title="کلاس" />
+        <item
+            android:id="@+id/nav_Setting"
+            android:icon="@drawable/ic_settings_150dp"
+            android:title="تنظیمات" />
+        <item
+            android:id="@+id/About_Us"
+            android:icon="@drawable/ic_about_us_icon_company_info_sign_vector_20390216"
+            android:title="درباره ی ما" />
+    </group>
+
+</menu>
