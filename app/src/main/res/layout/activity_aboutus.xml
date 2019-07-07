@@ -16,7 +16,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:fontFamily="@font/rooh"/>
+        android:fontFamily="@font/kamran1"/>
 
     <ImageView
         android:id="@+id/image_us"

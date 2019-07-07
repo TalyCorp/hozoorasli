@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="افزودن کلاس "
+        android:id="@+id/txt_afzodan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/overlay_dark_90"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="@font/kamran"/>
+
+
+    <EditText
+        android:id="@+id/name_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="لطفا کلاس جدید را وارد کنید"
+        android:textColorHint="@color/overlay_dark_90"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/kamran"/>
+
+    <TextView
+        android:id="@+id/btn_afzodn_new_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="افزودن"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:fontFamily="@font/kamran"/>
+
+
+</LinearLayout>

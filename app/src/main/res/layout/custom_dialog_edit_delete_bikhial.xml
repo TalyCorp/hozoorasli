@@ -35,7 +35,7 @@
         android:text="حذف"
         android:textColor="@color/overlay_dark_90"
         android:textSize="20dp"
-        android:fontFamily="@font/morvarid"/>
+        android:fontFamily="@font/mitra"/>
 
     <TextView
         android:id="@+id/btn_edit"
@@ -48,7 +48,7 @@
         android:layout_marginRight="25sp"
         android:textColor="@color/overlay_dark_90"
         android:textSize="20dp"
-        android:fontFamily="@font/morvarid"/>
+        android:fontFamily="@font/mitra"/>
 
     <TextView
         android:id="@+id/btn_ok"
@@ -61,7 +61,7 @@
         android:layout_marginLeft="25sp"
         android:textColor="@color/overlay_dark_90"
         android:textSize="20dp"
-        android:fontFamily="@font/morvarid" />
+        android:fontFamily="@font/mitra" />
 
 
 </RelativeLayout>

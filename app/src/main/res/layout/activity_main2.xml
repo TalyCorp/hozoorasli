@@ -18,7 +18,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:fontFamily="@font/rooh"
+            android:fontFamily="@font/kamran"
             android:id="@+id/txt_information"
             android:layout_width="347dp"
             android:layout_height="wrap_content"
