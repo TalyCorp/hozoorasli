@@ -1,5 +1,7 @@
 package com.example.hozoor;
 
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -18,7 +20,8 @@ import android.widget.Toast;
 public class Classes extends AppCompatActivity {
 
     TextView add;
-
+    Database database;
+    private SQLiteDatabase mdatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +50,10 @@ public class Classes extends AppCompatActivity {
 
                         if (!New_kelas.getText ().toString ().isEmpty ())
                         {
-                            Toast.makeText ( Classes.this, ":)", Toast.LENGTH_SHORT ).show ();
+                            ContentValues cv =new ContentValues (  );
+                            cv.put ( "Class" , String.valueOf ( New_kelas ) );
+                           mdatabase.insert ( "school" ,null , cv ) ;
+
                         }
                         else
                         {
