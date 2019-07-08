@@ -10,13 +10,13 @@
         android:id="@+id/txt_us"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:text="گروه برنامه نویسی تالی"
+        android:text="@string/title"
         android:textSize="35dp"
         android:gravity="center_horizontal"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:fontFamily="@font/rooh"/>
+        android:fontFamily="@font/kamran1"/>
 
     <ImageView
         android:id="@+id/image_us"
@@ -36,10 +36,27 @@
         android:layout_below="@id/image_us"/>
 
     <TextView
+        android:id="@+id/Us_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_us"
+        android:layout_marginTop="0dp"
+        android:text="09195061626"
+        android:textSize="26dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/Bidar_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="آقای بیدار"
+        android:layout_toRightOf="@id/Us_Number"/>
+
+    <TextView
         android:id="@+id/about_us_gmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/about_us"
+        android:layout_below="@+id/Us_Number"
         android:text="@string/gmail"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:gravity="center_horizontal"

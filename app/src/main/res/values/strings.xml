@@ -41,4 +41,12 @@
     <string name="title">گروه برنامه نویسی تالی</string>
     <string name="gmail">talycorp@gmail.com</string>
     <string name="click">(بر روی ایمیل کلیک کنید)</string>
+
+    <string name="title_add_class">افزودن کلاس</string>
+    <string name="btn_afzon_new_class">افزودن</string>
+    <string name="btn_laghv_new_class">لغو</string>
+    <string name="edit_add_new_class">لطفا کلاس جدید را وارد کنید</string>
+    <string name="txt_afzdon_new_class">افزودن کلاس</string>
+
+
 </resources>

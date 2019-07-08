@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Situation"
+    android:background="@color/overlay_light_60">
+
+    <TextView
+        android:id="@+id/txt_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="201dp"
+        android:text="دانش آموزان"
+        android:textColor="@color/overlay_dark_80"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tet_situation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:text="وضعیت دانش آموزان"
+        android:textColor="@color/overlay_dark_80"
+        android:textColorLink="#FCFCFC"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/image_student"
+        android:layout_width="103dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="55dp"
+        app:srcCompat="@drawable/colory" />
+
+    <ImageView
+        android:id="@+id/image_situation"
+        android:layout_width="116dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        app:srcCompat="@drawable/colorymore" />
+
+
+
+</RelativeLayout>

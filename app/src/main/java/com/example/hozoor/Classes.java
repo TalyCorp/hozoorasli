@@ -1,6 +1,7 @@
 package com.example.hozoor;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
@@ -35,14 +36,13 @@ public class Classes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
 
                         AlertDialog.Builder  builder=new AlertDialog.Builder ( Classes.this);
                         View view1 = getLayoutInflater ().inflate ( R.layout.custom_dialog_add_calss, null );
 
                 final EditText New_kelas=(EditText) view1.findViewById( R.id.name_class);
                 TextView afzodn = (TextView)view1.findViewById ( R.id.btn_afzodn_new_class );
+                final TextView cancel = (TextView)view1.findViewById ( R.id.btn_cancel_new_class );
 
                 afzodn.setOnClickListener ( new View.OnClickListener () {
                     @Override
@@ -57,8 +57,18 @@ public class Classes extends AppCompatActivity {
                         }
                         else
                         {
-                            Toast.makeText ( Classes.this, ":(", Toast.LENGTH_SHORT ).show ();
+                            Toast.makeText ( Classes.this, "نام کلاس را وارد کنید", Toast.LENGTH_SHORT ).show ();
                         }
+                    }
+                } );
+
+                cancel.setOnClickListener ( new View.OnClickListener () {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent intent = new Intent ( getApplicationContext () ,Classes.class );
+                        startActivity ( intent );
+                        finish ();
                     }
                 } );
 
