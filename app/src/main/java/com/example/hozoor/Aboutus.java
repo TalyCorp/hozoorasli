@@ -28,7 +28,7 @@ public class Aboutus extends AppCompatActivity {
                 Intent intent = new Intent ( Intent.ACTION_SEND );
                 intent.putExtra ( Intent.EXTRA_EMAIL ,name );
                 intent.setType ( "plain/text" );
-                startActivity ( Intent.createChooser ( intent, "بفرس" ));
+                startActivity ( Intent.createChooser ( intent, "روش ارسال" ));
 
 
             }
