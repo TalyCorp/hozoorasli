@@ -26,7 +26,7 @@ import android.widget.Toast;
 
 public class Classes extends AppCompatActivity {
 
-    TextView add , namekelas;
+    TextView add;
     Database database;
     private SQLiteDatabase sqLiteDatabase;
     private class_adaptor mclassadaptor;
@@ -37,7 +37,6 @@ public class Classes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_classes );
-        namekelas = (TextView) findViewById ( R.id.txt_name );
 
         Toolbar toolbar = findViewById ( R.id.toolbar );
         setSupportActionBar ( toolbar );
@@ -45,11 +44,10 @@ public class Classes extends AppCompatActivity {
         Database mdatabase = new Database ( this );
         sqLiteDatabase = mdatabase.getWritableDatabase ();
         RecyclerView recyclerView = findViewById ( R.id.rec_1 );
-        recyclerView.setLayoutManager ( new LinearLayoutManager ( this, LinearLayoutManager.VERTICAL, false ) );
+        recyclerView.setLayoutManager ( new LinearLayoutManager ( this ,LinearLayoutManager.VERTICAL,false ) );
         mclassadaptor = new class_adaptor ( this, getAllItem () );
 
-        recyclerView.setAdapter ( mclassadaptor );
-
+        recyclerView.setAdapter(mclassadaptor);
 
         FloatingActionButton fab = findViewById ( R.id.fab );
         fab.setOnClickListener ( new View.OnClickListener () {
@@ -65,24 +63,25 @@ public class Classes extends AppCompatActivity {
                 final TextView cancel = (TextView) view1.findViewById ( R.id.btn_cancel_new_class );
 
 
+
                 afzodn.setOnClickListener ( new View.OnClickListener () {
                     @Override
                     public void onClick(View view) {
 
-                        if (New_kelas.getText ().toString ().trim ().length () == 0) {
+                        if (New_kelas.getText().toString().trim().length()==0 ) {
 
 
                         } else {
                             Toast.makeText ( Classes.this, "نام کلاس را وارد کنید", Toast.LENGTH_SHORT ).show ();
-                            String name = New_kelas.getText ().toString ();
-                            ContentValues cv = new ContentValues ();
-                            cv.put ( Database.COLUMN_NAME, name );
+                            String name=New_kelas.getText().toString();
+                            ContentValues cv=new ContentValues();
+                            cv.put(Database.COLUMN_NAME,name);
 
-                            sqLiteDatabase.insert ( Database.TABLE_NAME, null, cv );
+                            sqLiteDatabase.insert(Database.TABLE_NAME,null,cv);
 
-                            mclassadaptor.swapcursor ( getAllItem () );
+                            mclassadaptor.swapcursor(getAllItem());
 
-                            New_kelas.getText ().clear ();
+                            New_kelas.getText().clear();
                         }
 
 
@@ -105,6 +104,8 @@ public class Classes extends AppCompatActivity {
 
             }
         } );
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager ( layoutManager );
 
     }
 

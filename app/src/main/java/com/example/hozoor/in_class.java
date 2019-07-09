@@ -21,7 +21,7 @@ public class in_class extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.in_class);
 
        toolbar =(Toolbar)findViewById(R.id.toolbar);
        tabLayout=findViewById(R.id.tablayout);

@@ -33,7 +33,10 @@ public class class_adaptor extends RecyclerView.Adapter<class_adaptor.classViewH
         this.mcontext = mcontext;
         this.mcusror = mcusror;
     }
-  public class classViewHolder extends RecyclerView.ViewHolder{
+
+
+
+    public class classViewHolder extends RecyclerView.ViewHolder{
         public TextView name;
       public classViewHolder(@NonNull View itemView) {
           super(itemView);
