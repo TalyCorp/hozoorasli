@@ -2,47 +2,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/txt_afzodan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="35dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/kamran"
         android:text="@string/txt_afzdon_new_class"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/overlay_dark_90"
         android:textSize="35dp" />
 
-
-    <EditText
-        android:id="@+id/name_class"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_afzodan"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="133dp"
-        android:layout_marginRight="133dp"
-        android:fontFamily="@font/kamran"
-        android:hint="@string/edit_add_new_class"
-        android:textColorHint="@color/overlay_dark_90" />
+     <com.google.android.material.textfield.TextInputEditText
+         android:id="@+id/name_class"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:fontFamily="@font/kamran"
+         android:hint="@string/edit_add_new_class"
+         android:textColorHint="@color/overlay_dark_90"
+         android:layout_below="@id/txt_afzodan"
+         android:layout_marginLeft="120dp"/>
 
     <TextView
         android:id="@+id/btn_afzodn_new_class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btn_cancel_new_class"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="-193dp"
-        android:layout_marginLeft="-193dp"
-        android:layout_marginTop="-3dp"
-        android:layout_toEndOf="@+id/txt_afzodan"
-        android:layout_toRightOf="@+id/txt_afzodan"
+        android:layout_below="@id/name_class"
+        android:layout_marginLeft="70dp"
         android:fontFamily="@font/kamran"
         android:text="@string/btn_afzon_new_class"
         android:textColor="@color/colorPrimary"
@@ -52,13 +41,8 @@
         android:id="@+id/btn_cancel_new_class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="313dp"
-        android:layout_marginLeft="313dp"
-        android:layout_marginTop="158dp"
+        android:layout_below="@id/name_class"
+        android:layout_marginLeft="262dp"
         android:fontFamily="@font/kamran"
         android:text="@string/btn_laghv_new_class"
         android:textColor="@color/colorPrimary"

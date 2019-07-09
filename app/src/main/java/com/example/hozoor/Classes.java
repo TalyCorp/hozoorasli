@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputEditText;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,7 +41,7 @@ public class Classes extends AppCompatActivity {
                         AlertDialog.Builder  builder=new AlertDialog.Builder ( Classes.this);
                         View view1 = getLayoutInflater ().inflate ( R.layout.custom_dialog_add_calss, null );
 
-                final EditText New_kelas=(EditText) view1.findViewById( R.id.name_class);
+                final EditText New_kelas=(TextInputEditText) view1.findViewById( R.id.name_class);
                 TextView afzodn = (TextView)view1.findViewById ( R.id.btn_afzodn_new_class );
                 final TextView cancel = (TextView)view1.findViewById ( R.id.btn_cancel_new_class );
 

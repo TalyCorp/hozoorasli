@@ -23,7 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_below="@id/txt_us"
         android:src="@drawable/about_us"
-
         android:layout_height="300dp" />
 
     <TextView
@@ -43,14 +42,9 @@
         android:layout_marginTop="0dp"
         android:text="09195061626"
         android:textSize="26dp"
-        android:layout_alignParentRight="true"/>
-
-    <TextView
-        android:id="@+id/Bidar_Number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="آقای بیدار"
-        android:layout_toRightOf="@id/Us_Number"/>
+        android:layout_alignParentRight="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/light_blue_600"/>
 
     <TextView
         android:id="@+id/about_us_gmail"
