@@ -12,8 +12,21 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class class_adaptor extends RecyclerView.Adapter<class_adaptor.classViewHolder>{
 
-    private  Context mcontext;
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
+    {
 
+        public ViewHolder(@NonNull View v) {
+            super ( v );
+            v.setOnClickListener ( this );
+        }
+
+        @Override
+        public void onClick(View view) {
+
+        }
+    }
+
+    private  Context mcontext;
     private  Cursor mcusror;
 
     public class_adaptor(Context mcontext, Cursor mcusror) {

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_name_old_kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="نام جدید را وارد کنید"
+        android:textSize="35dp"
+        android:textColor="@color/overlay_dark_90" />
+
+    <EditText
+        android:id="@+id/edit_new_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_old_kelas"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/beshe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عوض بشه"
+        android:layout_below="@id/edit_new_name"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/nashe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عوض نشه"
+        android:layout_below="@id/edit_new_name"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
